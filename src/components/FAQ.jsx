@@ -20,7 +20,7 @@ const QUESTIONS = [
   },
   {
     q: 'Could a macOS update break it?',
-    a: `It could. Anything that works inside Mission Control relies on behavior Apple doesn’t document, which is a constraint shared by every app of this kind — one long-standing alternative currently doesn’t run on the latest macOS. The commitment on this side is to keep up with releases, and to refund you if a macOS version ever leaves ${config.name} unusable.`,
+    a: `It could. Anything that works inside Mission Control relies on behavior Apple doesn’t document, which is a constraint shared by every app of this kind — one long-standing alternative currently doesn’t run on the latest macOS. The commitment on this side is to keep up with each release, and the ${config.trial.days}-day trial is there so you can confirm it works on your Mac before paying anything. Your license keeps working on the macOS you have, whatever Apple ships next.`,
   },
   {
     q: 'Is it on the Mac App Store?',
