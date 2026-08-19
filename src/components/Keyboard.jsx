@@ -16,16 +16,10 @@ export default function Keyboard() {
       <div className="grid gap-14 lg:grid-cols-2 lg:items-center lg:gap-20">
         <div>
           <Eyebrow>Keyboard</Eyebrow>
-          <Heading>The same shortcuts, applied to the thumbnail you point at.</Heading>
+          <Heading>Windows shortcuts you know, applied to thumbnails.</Heading>
           <Lead className="mt-5">
-            With Mission Control open, <Kbd>⌘</Kbd>&thinsp;<Kbd>W</Kbd> does nothing in macOS today.{' '}
-            {config.name} applies it to the window under your cursor, which saves aiming at a
-            control a few pixels across.
+            {config.name} applies your keyboard shortcuts directly to the window under your cursor. No need to aim at a control a few pixels across—just point and press.
           </Lead>
-          <p className="mt-5 leading-relaxed text-ink-400">
-            These shortcuts work only while the view is on screen. Once you close it, your keyboard
-            behaves exactly as before.
-          </p>
         </div>
 
         <ul className="divide-y divide-white/8 rounded-2xl bg-ink-900 ring-1 ring-white/8">

@@ -24,7 +24,7 @@ export default function Install() {
     <Section id="install" className="py-24 sm:py-32">
       <div className="max-w-2xl">
         <Eyebrow>Setup</Eyebrow>
-        <Heading>Installing it takes a couple of minutes.</Heading>
+        <Heading>Installing it takes 2 seconds.</Heading>
         <p className="mt-5 text-lg text-pretty text-ink-300">
           There is one permission to grant, and no configuration to work through afterwards.
         </p>
