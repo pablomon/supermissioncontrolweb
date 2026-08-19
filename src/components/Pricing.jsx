@@ -6,6 +6,7 @@ const INCLUDED = [
   'Mission Control and App Exposé, by mouse and by keyboard',
   'Updates throughout the 1.x line',
   'No account, no subscription and no telemetry',
+  'Refundable within 30 days',
 ]
 
 export default function Pricing() {
