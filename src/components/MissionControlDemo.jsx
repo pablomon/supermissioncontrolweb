@@ -252,7 +252,7 @@ function Thumbnail({ win, status, hovered, onHover, onLeave, onAction }) {
             from being pushed off-screen by a window near the left edge. It
             grows from that corner, not from its center. */}
         <div
-          className={`group/pill absolute -top-[5px] -left-[6px] z-10 flex origin-top-left items-center gap-[7px] rounded-full bg-ink-950/92 px-2.5 py-2 shadow-xl shadow-black/60 ring-1 ring-white/15 backdrop-blur-md transition-all duration-150 ${
+          className={`group/pill absolute -top-[5px] -left-[6px] z-10 flex origin-top-left items-center gap-[10px] rounded-full bg-ink-950/92 px-2.5 py-2 shadow-xl shadow-black/60 ring-1 ring-white/15 backdrop-blur-md transition-all duration-150 ${
             hovered ? 'scale-100 opacity-100' : 'pointer-events-none scale-75 opacity-0'
           }`}
         >
@@ -278,7 +278,11 @@ function PillButton({ kind, onClick }) {
     <button
       onClick={onClick}
       aria-label={ACTION_LABEL[kind]}
-      className={`flex h-3.5 w-3.5 items-center justify-center rounded-full text-[9px] leading-none font-bold text-black/60 transition ${style} focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none`}
+      /* The dot stays 14px, but `before` extends the hit area to 22x28. The
+         horizontal growth is capped at 4px a side: the gap is 10px, so any
+         more and neighbouring targets would overlap and steal each other's
+         clicks. */
+      className={`relative flex h-3.5 w-3.5 items-center justify-center rounded-full text-[9px] leading-none font-bold text-black/60 transition before:absolute before:-inset-x-[4px] before:-inset-y-[7px] before:content-[''] ${style} focus-visible:ring-2 focus-visible:ring-white focus-visible:outline-none`}
     >
       <span className="opacity-0 transition-opacity duration-100 group-hover/pill:opacity-100">
         {glyph}
