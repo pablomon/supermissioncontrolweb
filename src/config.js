@@ -41,7 +41,7 @@ export const config = {
   },
 
   links: {
-    support: 'mailto:support@supermissioncontrol.app',
+    support: 'mailto:support@supermissioncontrol.com',
     privacy: '#privacy',
     changelog: '#changelog',
   },
