@@ -3,6 +3,17 @@
     <channel>
         <title>SuperMissionControl</title>
         <item>
+            <title>0.1.1</title>
+            <pubDate>Fri, 21 Aug 2026 12:47:11 +0200</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-0.1.1.dmg" length="2828428" type="application/octet-stream" sparkle:edSignature="YtSlLZ9TSWP6zrt3QCCtCKnObo4vcDDGqQebotyeXFKbiXNS2XF7BTZKFSgG0tVmrwWj9EV3vnmwOKnNevD6BQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl2-1.delta" sparkle:deltaFrom="1" length="87950" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="BRgwAwBhQK9GaoT/0pUfys9nQa5pBl0j1qCtGPLDlJGRQ4jxOgCEjYjCdZdp+CuYyuNehQU5q5wcOPI0lFGZDw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.0</title>
             <pubDate>Fri, 21 Aug 2026 12:03:16 +0200</pubDate>
             <sparkle:version>1</sparkle:version>
