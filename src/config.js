@@ -23,8 +23,8 @@ export const config = {
   trial: {
     days: 14,
     // Direct link to the signed, notarized .dmg.
-    downloadUrl: '#download',
-    sizeMB: 3.1,
+    downloadUrl: '/SuperMissionControl.dmg',
+    sizeMB: 2.7,
   },
 
   // --- Checkout ----------------------------------------------------------
