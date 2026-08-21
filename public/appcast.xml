@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>SuperMissionControl</title>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Fri, 21 Aug 2026 12:03:16 +0200</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-0.1.0.dmg" length="3024998" type="application/octet-stream" sparkle:edSignature="BcdLM9lnXlPEtK7NXbldX2O8skM3WyJmO2JIEnvlLmsZqIuhfvcaqLuXwf5aon7eu9xw79cRZGE7rIvgNoklCA=="/>
+        </item>
+    </channel>
+</rss>
