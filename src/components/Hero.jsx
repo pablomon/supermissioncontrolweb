@@ -37,11 +37,11 @@ export default function Hero() {
 
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button href={config.trial.downloadUrl}>
-              <DownloadIcon />
-              Download free trial
+              {config.trial.downloadUrl && <DownloadIcon />}
+              {config.trial.downloadUrl ? 'Download free trial' : config.unavailableLabel}
             </Button>
             <Button href={config.checkoutUrl} variant="secondary">
-              Buy a license — {priceLabel}
+              {config.checkoutUrl ? `Buy a license — ${priceLabel}` : config.unavailableLabel}
             </Button>
           </div>
 

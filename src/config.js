@@ -23,14 +23,32 @@ export const config = {
   trial: {
     days: 14,
     // Direct link to the signed, notarized .dmg.
-    downloadUrl: '/SuperMissionControl.dmg',
+    //
+    // **Deliberately not live yet.** The build is ready and notarised, but the
+    // store is not: buying leads nowhere until Lemon Squeezy verifies the account.
+    // Handing out the trial before then is worse than handing out nothing — the
+    // trial start is kept in the Keychain and the oldest date wins, precisely so
+    // deleting the app cannot reset it, so anyone who tries it now burns their
+    // fourteen days, finds a dead checkout, and **cannot try again** on the day
+    // there is something to buy.
+    //
+    // Put '/SuperMissionControl.dmg' back the day the store works.
+    downloadUrl: null,
     sizeMB: 2.7,
   },
 
   // --- Checkout ----------------------------------------------------------
   // Lemon Squeezy checkout URL for the license product. Their hosted checkout
   // link works as a plain href; no script tag needed on the page.
-  checkoutUrl: '#buy',
+  //
+  // **Null until Lemon Squeezy verifies the store.** Same reasoning as the trial
+  // download above: an offer to buy that leads nowhere costs more than no offer.
+  checkoutUrl: null,
+
+  // What a button says when what it leads to is not ready. Shown instead of its
+  // label, not beside it: a button reading "Buy a license" that cannot sell one is
+  // the kind of small lie a visitor generalises to the whole product.
+  unavailableLabel: 'Available soon',
 
   requirements: {
     minMacOS: '14',

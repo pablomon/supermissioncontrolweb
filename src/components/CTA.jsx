@@ -16,7 +16,9 @@ export default function CTA() {
             you decide against it, moving {config.name} to the Trash removes it completely.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href={config.trial.downloadUrl}>Download free trial</Button>
+            <Button href={config.trial.downloadUrl}>
+              {config.trial.downloadUrl ? 'Download free trial' : config.unavailableLabel}
+            </Button>
             <Button href={config.checkoutUrl} variant="secondary">
               Buy now — {priceLabel}
             </Button>

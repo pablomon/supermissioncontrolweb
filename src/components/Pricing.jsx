@@ -50,10 +50,10 @@ export default function Pricing() {
             </ul>
 
             <Button href={config.checkoutUrl} className="mt-9 w-full">
-              Buy a license — {priceLabel}
+              {config.checkoutUrl ? `Buy a license — ${priceLabel}` : config.unavailableLabel}
             </Button>
             <Button href={config.trial.downloadUrl} variant="secondary" className="mt-3 w-full">
-              Download the free trial
+              {config.trial.downloadUrl ? 'Download the free trial' : config.unavailableLabel}
             </Button>
 
             <p className="mt-5 text-center text-xs text-ink-400">

@@ -49,6 +49,21 @@ export function Button({ href, variant = 'primary', className = '', children, ..
     ghost: 'text-ink-200 hover:text-white',
   }
 
+  // No destination means the thing it leads to is not ready. It renders as plainly
+  // unavailable rather than as a button that swallows the click: a control that
+  // looks pressable and does nothing reads as a broken site, and the visitor who
+  // concludes that does not come back to check later.
+  if (!href) {
+    return (
+      <span
+        aria-disabled="true"
+        className={`${base} cursor-default bg-ink-800/60 text-ink-400 ring-1 ring-white/5 ${className}`}
+      >
+        {children}
+      </span>
+    )
+  }
+
   return (
     <a href={href} className={`${base} ${styles[variant]} ${className}`} {...rest}>
       {children}
