@@ -3,23 +3,33 @@
     <channel>
         <title>SuperMissionControl</title>
         <item>
+            <title>1.0</title>
+            <pubDate>Fri, 21 Aug 2026 20:59:13 +0200</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.0.dmg" length="2847161" type="application/octet-stream" sparkle:edSignature="5wa8IPp+HDTDJ8Z2VbvAWItBcjg0CyGQ1m9H1+FtgqeYMiaAByVA7PA1fDcagLcBB6qxEHpLKMfZb5SqGHaBAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl4-3.delta" sparkle:deltaFrom="3" length="93430" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="juYgby3P3bHYdkWsDAvYmlRQH9Pdt9hnIAvB3Yw8fwXpVOMhn+4+11Afz2D6HA5uwlbCnGVU+zvdJpZP6SA9Ag=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl4-2.delta" sparkle:deltaFrom="2" length="101650" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="F7PcQNIlcc7GAIGmDZPG916c8f11xqVuQThImv4FxYeUzmSPV59bqz+NEmB7KNAuuy72vzQZeurTAANiAb7GAQ=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl4-1.delta" sparkle:deltaFrom="1" length="111030" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Yj9HNcntlzJ/hpcy+E/KmaK+Pj/z9oTCqXDjfb8trPo5wMut6fsEkQO5fFg1SYciikrLazEjSXo0TahXlyUtBw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>0.1.2</title>
+            <pubDate>Fri, 21 Aug 2026 19:31:16 +0200</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-0.1.2.dmg" length="2836630" type="application/octet-stream" sparkle:edSignature="uFBGlaI6O3danT/W0SIRnOPUSX9kDeW8pG2yXVC366PqZxx722b+SQ1eKoOO0q8g9/p6zK7iUEovDBj5Zj3mBQ=="/>
+        </item>
+        <item>
             <title>0.1.1</title>
             <pubDate>Fri, 21 Aug 2026 12:47:11 +0200</pubDate>
             <sparkle:version>2</sparkle:version>
             <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-0.1.1.dmg" length="2828428" type="application/octet-stream" sparkle:edSignature="YtSlLZ9TSWP6zrt3QCCtCKnObo4vcDDGqQebotyeXFKbiXNS2XF7BTZKFSgG0tVmrwWj9EV3vnmwOKnNevD6BQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl2-1.delta" sparkle:deltaFrom="1" length="87950" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="BRgwAwBhQK9GaoT/0pUfys9nQa5pBl0j1qCtGPLDlJGRQ4jxOgCEjYjCdZdp+CuYyuNehQU5q5wcOPI0lFGZDw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.1.0</title>
-            <pubDate>Fri, 21 Aug 2026 12:03:16 +0200</pubDate>
-            <sparkle:version>1</sparkle:version>
-            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-0.1.0.dmg" length="3024998" type="application/octet-stream" sparkle:edSignature="BcdLM9lnXlPEtK7NXbldX2O8skM3WyJmO2JIEnvlLmsZqIuhfvcaqLuXwf5aon7eu9xw79cRZGE7rIvgNoklCA=="/>
         </item>
     </channel>
 </rss>
