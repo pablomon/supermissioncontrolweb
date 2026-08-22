@@ -19,16 +19,8 @@ const QUESTIONS = [
     a: 'Yes — the single-app view you reach from a Dock icon or Control-Down. It behaves the same there, with the same control and the same shortcuts.',
   },
   {
-    q: 'What about multiple monitors and desktops?',
-    a: 'Both are supported. It has been tested with displays at different scale factors, with a second display positioned to the left of the main one, and across several Spaces. Inside a full-screen app’s own Space, Mission Control shows no windows, so nothing is drawn.',
-  },
-  {
-    q: 'Could a macOS update break it?',
-    a: `It could. Anything that works inside Mission Control relies on behavior Apple doesn’t document, which is a constraint shared by every app of this kind — one long-standing alternative currently doesn’t run on the latest macOS. The commitment on this side is to keep up with each release, and the ${config.trial.days}-day trial is there so you can confirm it works on your Mac before paying anything. Your license keeps working on the macOS you have, whatever Apple ships next.`,
-  },
-  {
     q: 'Is it on the Mac App Store?',
-    a: 'No. App Store apps have to be sandboxed, and the sandbox does not permit controlling another app’s windows, which is the whole function. The version sold here is signed with a Developer ID, notarized by Apple, and updates itself.',
+    a: 'No, and it can’t be. Apps in the App Store are kept walled off from one another, and reaching into another app’s windows is the whole of what this one does. Apple still checks every version before it reaches you, and the app keeps itself up to date.',
   },
   {
     q: 'Will I notice it running?',
