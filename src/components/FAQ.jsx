@@ -28,7 +28,7 @@ const QUESTIONS = [
   },
   {
     q: 'How many Macs does one license cover?',
-    a: 'Each license can be activated on up to 6 Macs. If you reach the limit, you can deactivate a Mac you no longer use and activate another.',
+    a: 'Five at a time. Reaching the limit does not mean buying again: deactivate a Mac you no longer use, from that Mac, and the seat comes back for another one.',
   },
 ]
 

@@ -13,6 +13,11 @@ export const config = {
 
   // --- Price -------------------------------------------------------------
   // `amount` is what gets rendered; keep `currency` and `symbol` in sync.
+  // En dólares, y es una decisión, no un descuido: el número contra el que va a
+  // comparar el visitante es el 9,99 $ de Mission Control Plus, y un precio en
+  // euros no se compara con ese sin calculadora. Al comprador europeo no le cambia
+  // nada — el merchant of record le cobra en euros con su IVA incluido; la moneda
+  // que se muestra y la que se cobra son ajustes distintos. Ver PLAN.md §Licencia.
   price: {
     amount: 7.99,
     currency: 'USD',
@@ -20,7 +25,7 @@ export const config = {
     // Shown struck through next to the price. Set to null to hide it.
     compareAt: null,
     // Appears under the price. One line.
-    note: '$7.99 · Lifetime license · Up to 6 Macs',
+    note: '$7.99 · Lifetime license · Up to 5 Macs',
   },
 
   trial: {

@@ -2,7 +2,7 @@ import { config, priceLabel } from '../config'
 import { Button, Eyebrow, Heading, Section } from './ui'
 
 const INCLUDED = [
-  'One license covering all the Macs you personally use',
+  'One license, active on up to 5 Macs at a time',
   'Mission Control and App Exposé, by mouse and by keyboard',
   'Updates throughout the 1.x line',
   'No account, no subscription and no telemetry',

@@ -47,7 +47,7 @@ export default function Hero() {
             </Button>
           </div>
 
-          <p className="mt-5 text-sm font-medium text-accent-soft">Use it on up to 6 Macs</p>
+          <p className="mt-5 text-sm font-medium text-accent-soft">Use it on up to 5 Macs</p>
 
           <p className="mt-4 text-sm text-ink-400">
             {config.trial.days}-day trial, no account. macOS {config.requirements.minMacOS}+ ·{' '}
