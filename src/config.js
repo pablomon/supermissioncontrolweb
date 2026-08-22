@@ -63,8 +63,8 @@ export const config = {
 
   links: {
     support: 'mailto:support@supermissioncontrol.com',
-    privacy: '#privacy',
-    changelog: '#changelog',
+    privacy: '/#privacy',
+    changelog: '/release-notes/',
   },
 
   copyright: `© ${new Date().getFullYear()} Pablo Monteserín. Not affiliated with Apple Inc.`,

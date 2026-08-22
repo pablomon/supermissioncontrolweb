@@ -2,10 +2,12 @@ import { useEffect, useState } from 'react'
 import { config, priceLabel } from '../config'
 import AppIcon from './AppIcon'
 
+// Rutas absolutas, no anclas sueltas: el nav lo comparten la portada y
+// /release-notes/, y un «#faq» desde la subpágina no lleva a ninguna parte.
 const LINKS = [
-  { href: '#keyboard', label: 'Keyboard' },
-  { href: '#faq', label: 'FAQ' },
-  { href: '#pricing', label: 'Pricing' },
+  { href: '/release-notes/', label: 'Release notes' },
+  { href: '/#faq', label: 'FAQ' },
+  { href: '/#pricing', label: 'Pricing' },
 ]
 
 export default function Nav() {
@@ -25,7 +27,7 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center gap-6 px-5 py-3.5 sm:px-8">
-        <a href="#top" className="flex items-center gap-2.5 font-semibold text-white">
+        <a href="/" className="flex items-center gap-2.5 font-semibold text-white">
           <AppIcon className="h-7 w-7" />
           <span className="text-[0.9375rem] tracking-tight">{config.name}</span>
         </a>
