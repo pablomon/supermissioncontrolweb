@@ -40,14 +40,14 @@ export default function FAQ() {
           <Eyebrow>Questions</Eyebrow>
           <Heading>Common questions.</Heading>
           <p className="mt-5 leading-relaxed text-ink-400">
-            If something isn’t covered here,{' '}
+            Other questions?{' '}
             <a
               href={config.links.support}
               className="text-accent-soft underline underline-offset-4 hover:text-white"
             >
-              send me an email
-            </a>{' '}
-            and I’ll answer it.
+              Get in touch
+            </a>
+            .
           </p>
         </div>
 
@@ -69,19 +69,6 @@ export default function FAQ() {
           ))}
         </div>
 
-        {/* Al final, que es donde llega quien buscó su duda y no la encontró. En el
-            pie hay un enlace de soporte, pero perdido entre otros dos: aquí es el
-            único sitio de la página donde alguien ya está esperando una respuesta. */}
-        <p className="mt-10 text-[0.9375rem] text-ink-400">
-          Need support?{' '}
-          <a
-            href={config.links.support}
-            className="font-medium text-white underline decoration-white/25 underline-offset-4 transition hover:decoration-white"
-          >
-            Get in touch
-          </a>
-          .
-        </p>
       </div>
     </Section>
   )
