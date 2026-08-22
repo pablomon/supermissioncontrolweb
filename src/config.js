@@ -54,7 +54,7 @@ export const config = {
     minMacOS: '14',
     minMacOSName: 'Sonoma',
     latestTested: '27',
-    latestTestedName: 'Tahoe',
+    latestTestedName: 'Golden Gate',
     architectures: 'Apple silicon and Intel',
   },
 

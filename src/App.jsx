@@ -1,6 +1,7 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Keyboard from './components/Keyboard'
+import ForceQuit from './components/ForceQuit'
 import Install from './components/Install'
 import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
@@ -14,6 +15,7 @@ export default function App() {
       <main>
         <Hero />
         <Keyboard />
+        <ForceQuit />
         <Install />
         <Pricing />
         <FAQ />
