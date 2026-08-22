@@ -23,7 +23,11 @@ export default function Pricing() {
 
       <div className="mx-auto mt-14 max-w-lg">
         <div className="relative overflow-hidden rounded-3xl bg-ink-900 p-8 ring-1 ring-white/10 sm:p-10">
-          <div className="pointer-events-none absolute inset-x-0 -top-24 h-48 bg-[radial-gradient(50%_60%_at_50%_100%,rgba(109,141,255,0.18),transparent)]" />
+          {/* Mismo arreglo que en el CTA, en espejo: el origen iba en el borde
+              inferior de esta caja, o sea 96 px por dentro de la tarjeta, y ahí el
+              degradado se cortaba en seco dejando una línea recta. Naciendo en el
+              borde superior, cae y se apaga sin corte visible. */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-96 bg-[radial-gradient(60%_100%_at_50%_0%,rgba(109,141,255,0.18),transparent)]" />
 
           <div className="relative">
             <p className="text-sm font-medium text-ink-300">{config.name} license</p>

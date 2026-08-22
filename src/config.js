@@ -6,7 +6,10 @@ export const config = {
   name: 'Super Mission Control',
   // Shown under the headline in the hero — keep it to one descriptive line.
   tagline: 'Close, minimize and zoom any window straight from Mission Control and App Exposé.',
-  version: '1.0',
+  // La versión mayor a secas, no la exacta. Es lo único que el visitante necesita
+  // saber —qué generación compra, que es lo que cubre su licencia— y evita que
+  // cada parche de la app obligue a tocar y desplegar la web para no mentir.
+  version: '1',
 
   // --- Price -------------------------------------------------------------
   // `amount` is what gets rendered; keep `currency` and `symbol` in sync.
