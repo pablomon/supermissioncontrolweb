@@ -3,23 +3,37 @@
     <channel>
         <title>SuperMissionControl</title>
         <item>
+            <title>1.1.2</title>
+            <pubDate>Sun, 23 Aug 2026 01:57:28 +0200</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<h3>Fixes around the Accessibility permission</h3>
+<ul>
+  <li>The app now appears in the Accessibility list when you go to grant it. It
+    could be missing from there entirely, leaving nothing to tick.</li>
+  <li>Revoking the permission is noticed. The menu used to go on saying the app
+    was active while nothing worked.</li>
+  <li>The menu bar icon is crossed out once the trial ends, so the app says what
+    state it is in without being asked.</li>
+</ul>
+]]></description>
+            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.1.2.dmg" length="2853273" type="application/octet-stream" sparkle:edSignature="fTQ69MvGiCpSlKWABZu9yZbr+70391Kh/qZRr7Mp6hU3CmlTtWxnD+KdQF7jUiuHTXZ3QRfVR4uWNDBUpXWTDw=="/>
+            <sparkle:deltas>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl7-6.delta" sparkle:deltaFrom="6" length="93126" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Z1SE7/zzZS8r9QlKLDy1O00cbETaJwYv72a0bhtlkyOSuR/s6Ep795JchWbSSA2JxBRJnrWZVfJ86W5tsJj/CA=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl7-5.delta" sparkle:deltaFrom="5" length="94318" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="e/cTYtHX7QPm1dXs+CRkWQvvcqspSvmKc0UMqhvpFBK7vWstMC2pRZlTu7nFCRQQ0i7UO+evITwGNqZ4tHd5Dw=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl7-4.delta" sparkle:deltaFrom="4" length="102898" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="8UYXRAKCUkAADeNRcsxYI0wGYJ+PuPzIUF+r6n4EEGGIv4VbaNVitakYZwQER9Q3chMoG4zoep8L4yJntyf1Cw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.1.1</title>
             <pubDate>Sat, 22 Aug 2026 17:04:57 +0200</pubDate>
             <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Says that ⌥ is there</h3>
-<p>
-  Force quitting is the one thing here you would never stumble upon — nobody
-  holds a modifier over a thumbnail to see what happens. The welcome panel now
-  mentions it alongside the other shortcuts.
-</p>
+            <description><![CDATA[<h3>Added explanation of force quit in welcome panel</h3>
 ]]></description>
             <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.1.1.dmg" length="2844878" type="application/octet-stream" sparkle:edSignature="+07M/soiA/XBGiczyaVGDIejOjSG8WF+oKVGg+9OjMnk0UxN0o4Seav62ZlN29KfUyXL5ARuOVGBbO/BJB7lBQ=="/>
-            <sparkle:deltas>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl6-5.delta" sparkle:deltaFrom="5" length="32202" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="FPBHISLc7DFLLuGSkTLfIu4F0870IYcXyCptGl2h4n9TQrF9yo5SLQYS3oS1UxZv4F55Q2F6PPZ+RCqIUdPRAw=="/>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl6-4.delta" sparkle:deltaFrom="4" length="86758" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="UVWoV3otoNMv1Ef2ufT6vt/JPlwW7O2mluekCzfqa8pDQ6NfFvt5dCeiJeBDMUuN2lcJyvOgSt4Vz6TO27qeDA=="/>
-            </sparkle:deltas>
         </item>
         <item>
             <title>1.1</title>
@@ -27,48 +41,13 @@
             <sparkle:version>5</sparkle:version>
             <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Force quit, and steadier around apps that hang</h3>
-<ul>
-  <li>
-    <strong>Hold ⌥ over a thumbnail</strong> and the red button turns black.
-    One click quits that application outright — for the window with no close
-    button, the close button that does nothing, and the app that stopped
-    answering some time ago.
-  </li>
-  <li>
-    Windows offering no controls at all used to get no badge, which left them
-    beyond reach entirely. Holding ⌥ now reaches them.
-  </li>
-  <li>
-    <strong>An unresponsive app no longer slows everything down.</strong> Asking
-    it questions used to block for seconds at a time, and the badge stopped
-    appearing over every other window as well. It gives up quickly now and does
-    not keep asking.
-  </li>
-</ul>
+            <description><![CDATA[<h3>Added force quit functionality.</h3>
+<p>
+  Holding ⌥ turns the close button into a force quit button. Closes the
+  application outright.
+</p>
 ]]></description>
             <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.1.dmg" length="2844653" type="application/octet-stream" sparkle:edSignature="f45rkAmyjEYxyOIWmXzN/ib7DShRmeZdXmjN/9caysQvvyMDh9lk0OtTp0winG+gnRNeeB+1QzBFReuJ9K0zAA=="/>
-        </item>
-        <item>
-            <title>1.0</title>
-            <pubDate>Fri, 21 Aug 2026 20:59:13 +0200</pubDate>
-            <sparkle:version>4</sparkle:version>
-            <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>First release</h3>
-<p>
-  Window controls that work, drawn over Mission Control’s thumbnails: close,
-  minimize and zoom whichever window you are pointing at, without leaving the
-  overview.
-</p>
-<ul>
-  <li>The buttons follow your cursor from thumbnail to thumbnail, sized and placed to match the window underneath.</li>
-  <li>⌘W, ⌘M and ⌃⌘F act on the window you are pointing at, and ⌘Q quits the app behind it.</li>
-  <li>Arrow keys walk the grid, Return brings a window to the front.</li>
-  <li>Works the same in App Exposé, across several displays and Spaces.</li>
-</ul>
-]]></description>
-            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.0.dmg" length="2847161" type="application/octet-stream" sparkle:edSignature="5wa8IPp+HDTDJ8Z2VbvAWItBcjg0CyGQ1m9H1+FtgqeYMiaAByVA7PA1fDcagLcBB6qxEHpLKMfZb5SqGHaBAA=="/>
         </item>
     </channel>
 </rss>

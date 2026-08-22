@@ -7,26 +7,13 @@ import { Eyebrow, Heading, Kbd, Section } from './ui'
 const RELEASES = [
   {
     version: '1.1.1',
-    title: 'Says that ⌥ is there',
-    body: (
-      <>
-        Force quitting is the one thing here you would never stumble upon — nobody holds a
-        modifier over a thumbnail to see what happens. The welcome panel now mentions it
-        alongside the other shortcuts.
-      </>
-    ),
+    title: 'Added explanation of force quit in welcome panel',
   },
   {
     version: '1.1',
-    title: 'Force quit, and steadier around apps that hang',
+    title: 'Added force quit functionality.',
     body: (
-      <>
-        Hold <Kbd>⌥</Kbd> over a thumbnail and the red button turns black; one click quits
-        that application outright. Windows offering no controls at all — previously beyond
-        reach entirely — can be reached this way too. And an unresponsive app no longer
-        slows everything else down: asking it questions used to block for seconds, and the
-        buttons stopped appearing over every other window as well.
-      </>
+      <>Holding ⌥ turns the close button into a force quit button. Closes the application outright.</>
     ),
   },
   {
@@ -60,9 +47,11 @@ export default function Changelog() {
               </span>
               <p className="text-[0.9375rem] font-medium text-white">{r.title}</p>
             </div>
-            <p className="mt-3 max-w-3xl text-[0.9375rem] leading-relaxed text-pretty text-ink-400">
-              {r.body}
-            </p>
+            {r.body && (
+              <p className="mt-3 max-w-3xl text-[0.9375rem] leading-relaxed text-pretty text-ink-400">
+                {r.body}
+              </p>
+            )}
           </li>
         ))}
       </ol>
