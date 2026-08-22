@@ -3,17 +3,26 @@
     <channel>
         <title>SuperMissionControl</title>
         <item>
+            <title>1.1</title>
+            <pubDate>Sat, 22 Aug 2026 16:55:38 +0200</pubDate>
+            <sparkle:version>5</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.1.dmg" length="2844653" type="application/octet-stream" sparkle:edSignature="f45rkAmyjEYxyOIWmXzN/ib7DShRmeZdXmjN/9caysQvvyMDh9lk0OtTp0winG+gnRNeeB+1QzBFReuJ9K0zAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl5-4.delta" sparkle:deltaFrom="4" length="86018" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ZvARaNxmbPEQAmklyYuNJt4aswm62Sf1UkXdDOBJfZjZDug7bBcevzYyH/sxgxhUL0GwCTIH9i4DA5W/OPQPCA=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl5-3.delta" sparkle:deltaFrom="3" length="107498" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xo0lRGKGAQAcsMT4uQePryQszwnstu14cthiIJ/Hwt+N52lWrHv6oYMYnlBkIUQatEFZc/5mSGBzEuYxDwNGDw=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl5-2.delta" sparkle:deltaFrom="2" length="113582" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="wKI5o02NscGjt+MfE5lgnIYNcnf0kMRO0ew9C5CAt7ZBLa39HTZD7Rl6oj5AgseUJIQL+kfF5fPITMaLyXArDw=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl5-1.delta" sparkle:deltaFrom="1" length="125738" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Q5+5BQ1dJy7ey+nSkB5Ul/moZSTFDU0kI8Uk1CGL45lmXx3UEk+O3LsPbxhwCdwdJas9nsirm071WOhd21goBA=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>1.0</title>
             <pubDate>Fri, 21 Aug 2026 20:59:13 +0200</pubDate>
             <sparkle:version>4</sparkle:version>
             <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.0.dmg" length="2847161" type="application/octet-stream" sparkle:edSignature="5wa8IPp+HDTDJ8Z2VbvAWItBcjg0CyGQ1m9H1+FtgqeYMiaAByVA7PA1fDcagLcBB6qxEHpLKMfZb5SqGHaBAA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl4-3.delta" sparkle:deltaFrom="3" length="93430" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="juYgby3P3bHYdkWsDAvYmlRQH9Pdt9hnIAvB3Yw8fwXpVOMhn+4+11Afz2D6HA5uwlbCnGVU+zvdJpZP6SA9Ag=="/>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl4-2.delta" sparkle:deltaFrom="2" length="101650" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="F7PcQNIlcc7GAIGmDZPG916c8f11xqVuQThImv4FxYeUzmSPV59bqz+NEmB7KNAuuy72vzQZeurTAANiAb7GAQ=="/>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl4-1.delta" sparkle:deltaFrom="1" length="111030" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Yj9HNcntlzJ/hpcy+E/KmaK+Pj/z9oTCqXDjfb8trPo5wMut6fsEkQO5fFg1SYciikrLazEjSXo0TahXlyUtBw=="/>
-            </sparkle:deltas>
         </item>
         <item>
             <title>0.1.2</title>
@@ -22,14 +31,6 @@
             <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-0.1.2.dmg" length="2836630" type="application/octet-stream" sparkle:edSignature="uFBGlaI6O3danT/W0SIRnOPUSX9kDeW8pG2yXVC366PqZxx722b+SQ1eKoOO0q8g9/p6zK7iUEovDBj5Zj3mBQ=="/>
-        </item>
-        <item>
-            <title>0.1.1</title>
-            <pubDate>Fri, 21 Aug 2026 12:47:11 +0200</pubDate>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-0.1.1.dmg" length="2828428" type="application/octet-stream" sparkle:edSignature="YtSlLZ9TSWP6zrt3QCCtCKnObo4vcDDGqQebotyeXFKbiXNS2XF7BTZKFSgG0tVmrwWj9EV3vnmwOKnNevD6BQ=="/>
         </item>
     </channel>
 </rss>
