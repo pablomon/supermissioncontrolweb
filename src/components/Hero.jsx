@@ -23,7 +23,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full bg-ink-800/80 px-3.5 py-1.5 text-xs font-medium text-ink-200 ring-1 ring-white/10 transition hover:bg-ink-700"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-light-green" />
-            Built and tested on macOS {config.requirements.latestTested}
+            Ready for macOS {config.requirements.latestTested}
           </a>
 
           <h1 className="mt-6 text-4xl leading-[1.05] font-semibold tracking-tight text-balance text-white sm:text-6xl">

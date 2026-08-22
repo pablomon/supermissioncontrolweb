@@ -8,6 +8,7 @@ const SHORTCUTS = [
   { keys: ['⌘', 'Q'], label: 'Quit the whole app behind it' },
   { keys: ['←', '→', '↑', '↓'], label: 'Walk the grid without the mouse' },
   { keys: ['↩'], label: 'Bring the selected window to the front' },
+  { keys: ['⌥'], label: 'Hold to force quit an app that has stopped answering' },
 ]
 
 export default function Keyboard() {

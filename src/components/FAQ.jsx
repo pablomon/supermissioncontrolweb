@@ -11,6 +11,10 @@ const QUESTIONS = [
     a: 'What you see is a picture of them. Mission Control draws each thumbnail as an image of the window, so those buttons aren’t buttons: clicking one selects the window like clicking anywhere else on it. In App Exposé the thumbnails are close to full size, which makes them look even more like the real thing. This app places a working control over them.',
   },
   {
+    q: 'What if a window refuses to close?',
+    a: `Some windows have no close button at all, and some belong to an app that has stopped answering — the two cases where a close button would be useless anyway. Hold ⌥ over the thumbnail and the red button turns black, with a warning mark: one click forces that application to quit. It does not ask the app first and nothing unsaved is kept, which is the point of it, so it takes a held key to reach.`,
+  },
+  {
     q: 'Does it work in App Exposé?',
     a: 'Yes — the single-app view you reach from a Dock icon or Control-Down. It behaves the same there, with the same control and the same shortcuts.',
   },
