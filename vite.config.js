@@ -1,4 +1,4 @@
-import { resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
@@ -8,12 +8,17 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
-      // Dos páginas de verdad, no un router: /release-notes/ es su propio HTML, y
-      // Cloudflare lo sirve directamente en vez de caer al respaldo de SPA.
+      // Páginas de verdad, no un router: cada una es su propio HTML, y Cloudflare
+      // lo sirve directamente en vez de caer al respaldo de SPA.
+      //
+      // Las rutas se resuelven con fileURLToPath y no con `import.meta.dirname`,
+      // que necesita Node 20.11 y no está garantizado en la imagen de compilación
+      // de Cloudflare: allí el build fallaría y se seguiría publicando la versión
+      // anterior, en silencio y sin que nada en el sitio lo delate.
       input: {
-        main: resolve(import.meta.dirname, 'index.html'),
-        releaseNotes: resolve(import.meta.dirname, 'release-notes/index.html'),
-        privacy: resolve(import.meta.dirname, 'privacy/index.html'),
+        main: fileURLToPath(new URL('index.html', import.meta.url)),
+        releaseNotes: fileURLToPath(new URL('release-notes/index.html', import.meta.url)),
+        privacy: fileURLToPath(new URL('privacy/index.html', import.meta.url)),
       },
     },
   },
