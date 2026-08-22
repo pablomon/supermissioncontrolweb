@@ -69,6 +69,21 @@ export default function FAQ() {
           ))}
         </div>
 
+
+        {/* La segunda, y a propósito. Arriba está antes de las preguntas y abajo
+            después de leerlas: repetirlo es barato, y en una utilidad barata de un
+            desarrollador que nadie conoce, ver dos veces que hay alguien detrás
+            pesa más que la elegancia de no repetirse. */}
+        <p className="mt-10 text-[0.9375rem] text-ink-400 lg:col-start-2">
+          Need support?{' '}
+          <a
+            href={config.links.support}
+            className="font-medium text-white underline decoration-white/25 underline-offset-4 transition hover:decoration-white"
+          >
+            Get in touch
+          </a>
+          .
+        </p>
       </div>
     </Section>
   )

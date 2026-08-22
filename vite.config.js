@@ -13,6 +13,7 @@ export default defineConfig({
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
         releaseNotes: resolve(import.meta.dirname, 'release-notes/index.html'),
+        privacy: resolve(import.meta.dirname, 'privacy/index.html'),
       },
     },
   },

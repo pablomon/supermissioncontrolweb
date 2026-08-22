@@ -63,7 +63,7 @@ export const config = {
 
   links: {
     support: 'mailto:support@supermissioncontrol.com',
-    privacy: '/#privacy',
+    privacy: '/privacy/',
     changelog: '/release-notes/',
   },
 
