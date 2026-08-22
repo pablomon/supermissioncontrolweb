@@ -1,4 +1,3 @@
-import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
@@ -11,14 +10,15 @@ export default defineConfig({
       // Páginas de verdad, no un router: cada una es su propio HTML, y Cloudflare
       // lo sirve directamente en vez de caer al respaldo de SPA.
       //
-      // Las rutas se resuelven con fileURLToPath y no con `import.meta.dirname`,
-      // que necesita Node 20.11 y no está garantizado en la imagen de compilación
-      // de Cloudflare: allí el build fallaría y se seguiría publicando la versión
-      // anterior, en silencio y sin que nada en el sitio lo delate.
+      // Rutas relativas y sin importar nada de Node. Wrangler analiza este fichero
+      // para detectar si se usa su plugin de Vite, y su analizador no traga con
+      // todo: con `fileURLToPath` el build de Vite pasaba y **el despliegue
+      // fallaba después**, dejando publicada la versión anterior sin que nada en el
+      // sitio lo delatara.
       input: {
-        main: fileURLToPath(new URL('index.html', import.meta.url)),
-        releaseNotes: fileURLToPath(new URL('release-notes/index.html', import.meta.url)),
-        privacy: fileURLToPath(new URL('privacy/index.html', import.meta.url)),
+        main: 'index.html',
+        releaseNotes: 'release-notes/index.html',
+        privacy: 'privacy/index.html',
       },
     },
   },
