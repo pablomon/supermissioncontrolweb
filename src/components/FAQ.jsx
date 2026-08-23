@@ -8,11 +8,11 @@ const QUESTIONS = [
   },
   {
     q: 'Aren’t there already traffic lights on every thumbnail?',
-    a: 'What you see is a picture of them. Mission Control draws each thumbnail as an image of the window, so those buttons aren’t buttons: clicking one selects the window like clicking anywhere else on it. In App Exposé the thumbnails are close to full size, which makes them look even more like the real thing. This app places a working control over them.',
+    a: 'What you see is a picture, not real buttons. Mission Control draws each thumbnail as a static image, so clicking a "button" just selects the window — same as clicking anywhere else on it. In App Exposé the thumbnails are almost full size, so this is easy to miss. This app adds working buttons on top.',
   },
   {
     q: 'What if a window refuses to close?',
-    a: `Some windows have no close button at all, and some belong to an app that has stopped answering — the two cases where a close button would be useless anyway. Hold ⌥ over the thumbnail and the red button turns black, with a warning mark: one click forces that application to quit. It does not ask the app first and nothing unsaved is kept, which is the point of it, so it takes a held key to reach.`,
+    a: `Some windows have no close button. Others belong to an app that has stopped responding, so the close button does nothing. Hold ⌥ over the thumbnail and the red button turns black with a warning mark — one click force quits that app. It doesn’t ask first, and any unsaved work is lost. That’s the point: it’s a last resort, which is why it takes a held key to reach.`,
   },
   {
     q: 'Does it work in App Exposé?',
@@ -20,7 +20,7 @@ const QUESTIONS = [
   },
   {
     q: 'Is it on the Mac App Store?',
-    a: 'No, and it can’t be. Apps in the App Store are kept walled off from one another, and reaching into another app’s windows is the whole of what this one does. Apple still checks every version before it reaches you, and the app keeps itself up to date.',
+    a: 'No, and it can’t be. App Store apps are kept isolated from each other, and controlling another app’s windows is this app’s entire purpose. Apple still reviews every version before it reaches you, and the app updates itself automatically.',
   },
   {
     q: 'Will I notice it running?',
@@ -28,7 +28,7 @@ const QUESTIONS = [
   },
   {
     q: 'How many Macs does one license cover?',
-    a: 'Five at a time. Reaching the limit does not mean buying again: deactivate a Mac you no longer use, from that Mac, and the seat comes back for another one.',
+    a: 'Five at a time. If you reach the limit, you don’t need to buy again — deactivate a Mac you no longer use, and that spot opens up for another one.',
   },
 ]
 

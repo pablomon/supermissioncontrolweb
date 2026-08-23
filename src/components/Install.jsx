@@ -10,7 +10,7 @@ const STEPS = [
   {
     n: '2',
     title: 'Grant the Accessibility permission',
-    body: `Pressing the buttons of another app’s window requires it, and macOS only lets you grant it by hand in System Settings. ${config.name} waits for the switch and continues as soon as you turn it on, without a restart.`,
+    body: `Controlling another app’s window needs this permission, and macOS only lets you grant it by hand, in System Settings. ${config.name} waits for you to turn it on, then continues right away — no restart needed.`,
   },
   {
     n: '3',

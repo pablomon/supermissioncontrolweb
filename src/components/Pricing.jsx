@@ -61,8 +61,8 @@ export default function Pricing() {
             </Button>
 
             <p className="mt-5 text-center text-xs text-ink-400">
-              Sold directly rather than through the Mac App Store, whose sandbox does not allow an
-              app to control another app’s windows.
+              Sold directly, not through the Mac App Store — its sandbox doesn’t allow one app to
+              control another app’s windows.
             </p>
           </div>
         </div>

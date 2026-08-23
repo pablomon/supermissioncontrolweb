@@ -8,7 +8,7 @@ const SHORTCUTS = [
   { keys: ['⌘', 'Q'], label: 'Quit the whole app behind it' },
   { keys: ['←', '→', '↑', '↓'], label: 'Walk the grid without the mouse' },
   { keys: ['↩'], label: 'Bring the selected window to the front' },
-  { keys: ['⌥'], label: 'Hold to force quit an app that has stopped answering' },
+  { keys: ['⌥'], label: 'Hold to force quit an app that has stopped responding' },
 ]
 
 export default function Keyboard() {
@@ -19,7 +19,7 @@ export default function Keyboard() {
           <Eyebrow>Keyboard</Eyebrow>
           <Heading>Windows shortcuts you know, applied to thumbnails.</Heading>
           <Lead className="mt-5">
-            {config.name} applies your keyboard shortcuts directly to the window under your cursor. No need to aim at a control a few pixels across—just point and press.
+            {config.name} applies your keyboard shortcuts to the window under your cursor. No need to click a tiny button — just point and press.
           </Lead>
         </div>
 
