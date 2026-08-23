@@ -6,15 +6,23 @@ import { Eyebrow, Heading, Kbd, Section } from './ui'
 // instalada.
 const RELEASES = [
   {
+    version: '1.1.2',
+    title: 'Accessibility and menu bar fixes',
+    body: (
+      <>
+        The app always appears in the Accessibility list. Revoked permission is detected
+        immediately. Menu bar icon indicates when the trial has run out.
+      </>
+    ),
+  },
+  {
     version: '1.1.1',
-    title: 'Added explanation of force quit in welcome panel',
+    title: 'Welcome panel mentions force quit',
   },
   {
     version: '1.1',
-    title: 'Added force quit functionality.',
-    body: (
-      <>Holding ⌥ turns the close button into a force quit button. Closes the application outright.</>
-    ),
+    title: 'Force quit from Mission Control',
+    body: <>Hold ⌥ over a thumbnail to turn the red button into force quit.</>,
   },
   {
     version: '1.0',

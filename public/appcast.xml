@@ -5,17 +5,15 @@
         <item>
             <title>1.1.2</title>
             <pubDate>Sun, 23 Aug 2026 01:57:28 +0200</pubDate>
+            <sparkle:fullReleaseNotesLink>https://www.supermissioncontrol.com/release-notes/</sparkle:fullReleaseNotesLink>
             <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Fixes around the Accessibility permission</h3>
+            <description><![CDATA[<h3>Accessibility and menu bar fixes</h3>
 <ul>
-  <li>The app now appears in the Accessibility list when you go to grant it. It
-    could be missing from there entirely, leaving nothing to tick.</li>
-  <li>Revoking the permission is noticed. The menu used to go on saying the app
-    was active while nothing worked.</li>
-  <li>The menu bar icon is crossed out once the trial ends, so the app says what
-    state it is in without being asked.</li>
+  <li>The app always appears in the Accessibility list.</li>
+  <li>Revoked permission is detected immediately.</li>
+  <li>Menu bar icon indicates when the trial has run out.</li>
 </ul>
 ]]></description>
             <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.1.2.dmg" length="2853273" type="application/octet-stream" sparkle:edSignature="fTQ69MvGiCpSlKWABZu9yZbr+70391Kh/qZRr7Mp6hU3CmlTtWxnD+KdQF7jUiuHTXZ3QRfVR4uWNDBUpXWTDw=="/>
@@ -28,24 +26,23 @@
         <item>
             <title>1.1.1</title>
             <pubDate>Sat, 22 Aug 2026 17:04:57 +0200</pubDate>
+            <sparkle:fullReleaseNotesLink>https://www.supermissioncontrol.com/release-notes/</sparkle:fullReleaseNotesLink>
             <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Added explanation of force quit in welcome panel</h3>
+            <description><![CDATA[<h3>Welcome panel mentions force quit</h3>
 ]]></description>
             <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.1.1.dmg" length="2844878" type="application/octet-stream" sparkle:edSignature="+07M/soiA/XBGiczyaVGDIejOjSG8WF+oKVGg+9OjMnk0UxN0o4Seav62ZlN29KfUyXL5ARuOVGBbO/BJB7lBQ=="/>
         </item>
         <item>
             <title>1.1</title>
             <pubDate>Sat, 22 Aug 2026 16:55:38 +0200</pubDate>
+            <sparkle:fullReleaseNotesLink>https://www.supermissioncontrol.com/release-notes/</sparkle:fullReleaseNotesLink>
             <sparkle:version>5</sparkle:version>
             <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Added force quit functionality.</h3>
-<p>
-  Holding ⌥ turns the close button into a force quit button. Closes the
-  application outright.
-</p>
+            <description><![CDATA[<h3>Force quit from Mission Control</h3>
+<p>Hold ⌥ over a thumbnail to turn the red button into force quit.</p>
 ]]></description>
             <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.1.dmg" length="2844653" type="application/octet-stream" sparkle:edSignature="f45rkAmyjEYxyOIWmXzN/ib7DShRmeZdXmjN/9caysQvvyMDh9lk0OtTp0winG+gnRNeeB+1QzBFReuJ9K0zAA=="/>
         </item>
