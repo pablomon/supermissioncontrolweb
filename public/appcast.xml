@@ -24,32 +24,5 @@
                 <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl8-4.delta" sparkle:deltaFrom="4" length="114306" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hS8rCQA8sAPZ97gHv8Q3Fc/XaJUhfVx33CmLrrgBpqK69M/gl9jOULPKWTVnH5Ydhwhhl7XNSmcUjHr0TPinCw=="/>
             </sparkle:deltas>
         </item>
-        <item>
-            <title>1.1.2</title>
-            <pubDate>Sun, 23 Aug 2026 01:57:28 +0200</pubDate>
-            <sparkle:fullReleaseNotesLink>https://www.supermissioncontrol.com/release-notes/</sparkle:fullReleaseNotesLink>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>1.1.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Accessibility and menu bar fixes</h3>
-<ul>
-  <li>The app always appears in the Accessibility list.</li>
-  <li>Revoked permission is detected immediately.</li>
-  <li>Menu bar icon indicates when the trial has run out.</li>
-</ul>
-]]></description>
-            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.1.2.dmg" length="2853273" type="application/octet-stream" sparkle:edSignature="fTQ69MvGiCpSlKWABZu9yZbr+70391Kh/qZRr7Mp6hU3CmlTtWxnD+KdQF7jUiuHTXZ3QRfVR4uWNDBUpXWTDw=="/>
-        </item>
-        <item>
-            <title>1.1.1</title>
-            <pubDate>Sat, 22 Aug 2026 17:04:57 +0200</pubDate>
-            <sparkle:fullReleaseNotesLink>https://www.supermissioncontrol.com/release-notes/</sparkle:fullReleaseNotesLink>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Welcome panel mentions force quit</h3>
-]]></description>
-            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.1.1.dmg" length="2844878" type="application/octet-stream" sparkle:edSignature="+07M/soiA/XBGiczyaVGDIejOjSG8WF+oKVGg+9OjMnk0UxN0o4Seav62ZlN29KfUyXL5ARuOVGBbO/BJB7lBQ=="/>
-        </item>
     </channel>
 </rss>
