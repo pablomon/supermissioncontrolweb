@@ -6,6 +6,17 @@ import { Eyebrow, Heading, Kbd, Section } from './ui'
 // instalada.
 const RELEASES = [
   {
+    version: '1.2',
+    title: 'Instructions from the menu bar',
+    body: (
+      <>
+        New How It Works entry lists the shortcuts and force quit. Trial notice closes
+        when a licence is activated. Stale Accessibility permission is detected and
+        recovered.
+      </>
+    ),
+  },
+  {
     version: '1.1.2',
     title: 'Accessibility and menu bar fixes',
     body: (
