@@ -1,4 +1,5 @@
 import { config, priceLabel } from '../config'
+import Notify from './Notify'
 import { Button, Eyebrow, Heading, Section } from './ui'
 
 const INCLUDED = [
@@ -53,12 +54,18 @@ export default function Pricing() {
               ))}
             </ul>
 
-            <Button href={config.checkoutUrl} className="mt-9 w-full">
-              {config.checkoutUrl ? `Buy a license — ${priceLabel}` : config.unavailableLabel}
-            </Button>
-            <Button href={config.trial.downloadUrl} variant="secondary" className="mt-3 w-full">
-              {config.trial.downloadUrl ? 'Download the free trial' : config.unavailableLabel}
-            </Button>
+            {config.checkoutUrl ? (
+              <>
+                <Button href={config.checkoutUrl} className="mt-9 w-full">
+                  {`Buy a license — ${priceLabel}`}
+                </Button>
+                <Button href={config.trial.downloadUrl} variant="secondary" className="mt-3 w-full">
+                  {config.trial.downloadUrl ? 'Download the free trial' : config.unavailableLabel}
+                </Button>
+              </>
+            ) : (
+              <Notify />
+            )}
 
             <p className="mt-5 text-center text-xs text-ink-400">
               Sold directly, not through the Mac App Store — its sandbox doesn’t allow one app to

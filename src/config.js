@@ -66,6 +66,16 @@ export const config = {
     architectures: 'Apple silicon and Intel',
   },
 
+  // Dónde va quien quiere comprar y todavía no puede. Mientras `checkoutUrl` sea
+  // null, la sección de precio no ofrece nada: quien la prueba hoy y decide pagar
+  // no tiene forma de decirlo, y para cuando exista la tienda ya se olvidó. Esto no
+  // recupera su prueba —la fecha del trial se guarda y gana la más antigua— pero sí
+  // su dirección, que es lo único que hace falta para avisarle.
+  notify: {
+    address: 'support@supermissioncontrol.com',
+    subject: 'Tell me when Super Mission Control is on sale',
+  },
+
   links: {
     support: 'mailto:support@supermissioncontrol.com',
     privacy: '/privacy/',
@@ -76,3 +86,24 @@ export const config = {
 }
 
 export const priceLabel = `${config.price.symbol}${config.price.amount}`
+
+/**
+ * Qué hace el botón principal, decidido en un solo sitio.
+ *
+ * Estaba resuelto tres veces y mal: el héroe y la sección de precio miraban
+ * `checkoutUrl` para caer en «Available soon», pero el nav y la llamada final
+ * pintaban «Buy — $7.99» sin mirar nada, así que la web ofrecía comprar y el botón
+ * no llevaba a ningún sitio. Un botón que promete cobrar y no cobra es la clase de
+ * mentira pequeña que el visitante generaliza al producto entero.
+ *
+ * Sin tienda, todos llevan al formulario de aviso, que es lo único que sí se puede
+ * cumplir hoy.
+ */
+export const buyAction = config.checkoutUrl
+  ? { href: config.checkoutUrl, label: `Buy a license — ${priceLabel}`, short: `Buy — ${priceLabel}` }
+  : { href: '#pricing', label: 'Tell me when it’s on sale', short: 'Get notified' }
+
+/** La descarga, o nada: no hay forma honesta de ofrecer una prueba que no existe. */
+export const trialAction = config.trial.downloadUrl
+  ? { href: config.trial.downloadUrl, label: 'Download free trial' }
+  : null

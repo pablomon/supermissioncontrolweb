@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { config, priceLabel } from '../config'
+import { buyAction, config } from '../config'
 import AppIcon from './AppIcon'
 
 // Rutas absolutas, no anclas sueltas: el nav lo comparten la portada y
@@ -43,10 +43,10 @@ export default function Nav() {
         </ul>
 
         <a
-          href={config.checkoutUrl}
+          href={buyAction.href}
           className="ml-auto rounded-lg bg-white px-4 py-2 text-sm font-semibold text-ink-950 transition hover:bg-ink-100 md:ml-0"
         >
-          Buy — {priceLabel}
+          {buyAction.short}
         </a>
       </nav>
     </header>

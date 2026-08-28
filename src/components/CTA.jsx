@@ -1,4 +1,4 @@
-import { config, priceLabel } from '../config'
+import { buyAction, config, trialAction } from '../config'
 import { Button, Section } from './ui'
 
 export default function CTA() {
@@ -20,11 +20,9 @@ export default function CTA() {
             you decide against it, moving {config.name} to the Trash removes it completely.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href={config.trial.downloadUrl}>
-              {config.trial.downloadUrl ? 'Download free trial' : config.unavailableLabel}
-            </Button>
-            <Button href={config.checkoutUrl} variant="secondary">
-              Buy now — {priceLabel}
+            {trialAction && <Button href={trialAction.href}>{trialAction.label}</Button>}
+            <Button href={buyAction.href} variant={trialAction ? 'secondary' : undefined}>
+              {buyAction.label}
             </Button>
           </div>
         </div>

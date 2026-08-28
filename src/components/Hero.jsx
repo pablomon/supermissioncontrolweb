@@ -1,4 +1,4 @@
-import { config, priceLabel } from '../config'
+import { buyAction, config, trialAction } from '../config'
 import MissionControlDemo from './MissionControlDemo'
 import { Button } from './ui'
 
@@ -38,20 +38,27 @@ export default function Hero() {
           </p>
 
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href={config.trial.downloadUrl}>
-              {config.trial.downloadUrl && <DownloadIcon />}
-              {config.trial.downloadUrl ? 'Download free trial' : config.unavailableLabel}
-            </Button>
-            <Button href={config.checkoutUrl} variant="secondary">
-              {config.checkoutUrl ? `Buy a license — ${priceLabel}` : config.unavailableLabel}
+            {trialAction && (
+              <Button href={trialAction.href}>
+                <DownloadIcon />
+                {trialAction.label}
+              </Button>
+            )}
+            <Button href={buyAction.href} variant={trialAction ? 'secondary' : undefined}>
+              {buyAction.label}
             </Button>
           </div>
 
           <p className="mt-5 text-sm font-medium text-accent-soft">Use it on up to 5 Macs</p>
 
+          {/* El peso y la prueba solo se anuncian cuando hay algo que descargar.
+              Sin eso son la promesa de un botón que no está: la línea prometía
+              catorce días y 2,7 MB debajo de un enlace que solo apunta a un
+              formulario. */}
           <p className="mt-4 text-sm text-ink-400">
-            {config.trial.days}-day trial, no account. macOS {config.requirements.minMacOS}+ ·{' '}
-            {config.requirements.architectures} · {config.trial.sizeMB} MB
+            {trialAction && `${config.trial.days}-day trial, no account. `}
+            macOS {config.requirements.minMacOS}+ · {config.requirements.architectures}
+            {trialAction && ` · ${config.trial.sizeMB} MB`}
           </p>
           <p className="mt-1 text-sm text-ink-400">{config.price.note}</p>
 
