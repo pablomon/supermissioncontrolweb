@@ -38,7 +38,7 @@ export function Lead({ children, className = '' }) {
   )
 }
 
-export function Button({ href, variant = 'primary', className = '', children, ...rest }) {
+export function Button({ href, type, variant = 'primary', className = '', children, ...rest }) {
   const base =
     'inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-[0.9375rem] font-semibold transition duration-150 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent'
 
@@ -47,6 +47,18 @@ export function Button({ href, variant = 'primary', className = '', children, ..
       'bg-white text-ink-950 shadow-lg shadow-black/30 hover:bg-ink-100 active:translate-y-px',
     secondary: 'bg-ink-800 text-ink-100 ring-1 ring-white/10 hover:bg-ink-700 active:translate-y-px',
     ghost: 'text-ink-200 hover:text-white',
+  }
+
+  // A `type` means this is a real control —a form's submit— and not a link. It is
+  // asked for explicitly so that the rule below keeps meaning what it says: no
+  // destination and nothing to do is still an unavailable button, not a live one
+  // that swallows the click.
+  if (type) {
+    return (
+      <button type={type} className={`${base} ${styles[variant]} ${className} disabled:opacity-60`} {...rest}>
+        {children}
+      </button>
+    )
   }
 
   // No destination means the thing it leads to is not ready. It renders as plainly

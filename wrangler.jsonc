@@ -1,0 +1,32 @@
+{
+	// La configuración estaba solo en el panel de Cloudflare, y eso bastaba mientras
+	// el sitio fuera estático. Recoger correos pide un script, un binding y una ruta
+	// que no caiga en el respaldo, y eso ya no cabe en el panel.
+	//
+	// **`name` tiene que ser el del Worker que ya existe.** Con otro nombre el
+	// despliegue crea un Worker nuevo, el dominio sigue apuntando al viejo, y el sitio
+	// se queda igual sin que nada falle: exactamente el modo de fallo que costó cinco
+	// commits.
+	"name": "supermissioncontrolweb",
+	"compatibility_date": "2026-08-01",
+	"main": "worker/index.js",
+	"assets": {
+		"directory": "./dist",
+		"binding": "ASSETS",
+		// Lo que ya hacía el sitio: una ruta desconocida devuelve el HTML, no un 404.
+		"not_found_handling": "single-page-application",
+		// Sin esto /api/notify nunca llega al script: los assets contestan primero y
+		// devuelven la página de respaldo con un 200, así que el formulario parecería
+		// funcionar y no guardaría nada.
+		"run_worker_first": [
+			"/api/*"
+		]
+	},
+	"kv_namespaces": [
+		{
+			"binding": "NOTIFY",
+			"id": "6c51fcd161d54059b0373c232ca89698",
+			"remote": true
+		}
+	]
+}
