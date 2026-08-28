@@ -30,6 +30,17 @@ const QUESTIONS = [
     q: 'How many Macs does one license cover?',
     a: 'Five at a time. If you reach the limit, you don’t need to buy again — deactivate a Mac you no longer use, and that spot opens up for another one.',
   },
+  // La última a propósito. Quien llega hasta aquí ya está convencido y busca
+  // detalles; más arriba plantaría una duda que nadie traía.
+  //
+  // El sujeto es «the system» y no el Dock: para quien compra, el Dock es la barra
+  // de iconos de abajo, y decirle que hace algo en Mission Control confunde más de
+  // lo que aclara. Pero tampoco puede ser la app, porque entonces el hueco se
+  // archiva como defecto suyo por mucho que la respuesta diga lo contrario.
+  {
+    q: 'Why does an empty space stay where a window was?',
+    a: 'On macOS 26 and earlier, the system does not move the other thumbnails to fill it. The app works the same on every version: you can still close, minimize or open the windows next to it. Open Mission Control again and the space is gone. macOS 27 rearranges the thumbnails automatically.',
+  },
 ]
 
 export default function FAQ() {
