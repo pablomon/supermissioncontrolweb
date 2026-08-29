@@ -1,5 +1,5 @@
 import { buyAction, config, trialAction } from '../config'
-import MissionControlDemo from './MissionControlDemo'
+import HeroVideo from './HeroVideo'
 import { Button } from './ui'
 
 const TRUST_ITEMS = [
@@ -73,7 +73,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-14 sm:mt-16">
-          <MissionControlDemo />
+          <HeroVideo />
         </div>
       </div>
     </div>
