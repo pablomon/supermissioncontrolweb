@@ -1,5 +1,9 @@
 import { config } from '../config'
 import { Eyebrow, Heading, Kbd, Lead, Section } from './ui'
+import DemoVideo from './DemoVideo'
+import hungWebm from '../assets/hung.webm'
+import hungMp4 from '../assets/hung.mp4'
+import hungPoster from '../assets/hung-poster.jpg'
 
 export default function ForceQuit() {
   return (
@@ -18,6 +22,17 @@ export default function ForceQuit() {
           normal buttons come back.
         </p>
       </div>
+
+      {/* Debajo del texto y no al lado: la bola de playa girando sobre una ventana
+          muerta es la parte que no se puede contar con palabras, pero solo significa
+          algo si antes se ha leído que ⌥ cambia lo que hace el botón rojo. */}
+      <DemoVideo
+        className="mt-14 sm:mt-16"
+        webm={hungWebm}
+        mp4={hungMp4}
+        poster={hungPoster}
+        label="Force quitting an unresponsive app from Mission Control by holding Option"
+      />
     </Section>
   )
 }

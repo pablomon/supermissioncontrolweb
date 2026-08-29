@@ -1,5 +1,8 @@
 import { buyAction, config, trialAction } from '../config'
-import HeroVideo from './HeroVideo'
+import DemoVideo from './DemoVideo'
+import demoWebm from '../assets/demo.webm'
+import demoMp4 from '../assets/demo.mp4'
+import demoPoster from '../assets/demo-poster.jpg'
 import { Button } from './ui'
 
 const TRUST_ITEMS = [
@@ -73,7 +76,12 @@ export default function Hero() {
         </div>
 
         <div className="mt-14 sm:mt-16">
-          <HeroVideo />
+          <DemoVideo
+            webm={demoWebm}
+            mp4={demoMp4}
+            poster={demoPoster}
+            label="Closing windows from Mission Control with Super Mission Control"
+          />
         </div>
       </div>
     </div>
