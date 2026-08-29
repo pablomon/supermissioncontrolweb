@@ -1,4 +1,4 @@
-import { config, priceLabel } from '../config'
+import { config, priceLabel, trialAction } from '../config'
 import Notify from './Notify'
 import { Button, Eyebrow, Heading, Section } from './ui'
 
@@ -59,9 +59,11 @@ export default function Pricing() {
                 <Button href={config.checkoutUrl} className="mt-9 w-full">
                   {`Buy a license — ${priceLabel}`}
                 </Button>
-                <Button href={config.trial.downloadUrl} variant="secondary" className="mt-3 w-full">
-                  {config.trial.downloadUrl ? 'Download the free trial' : config.unavailableLabel}
-                </Button>
+                {trialAction && (
+                  <Button href={trialAction.href} variant="secondary" className="mt-3 w-full">
+                    {trialAction.label}
+                  </Button>
+                )}
               </>
             ) : (
               <Notify />

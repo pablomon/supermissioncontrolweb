@@ -46,12 +46,13 @@ export const config = {
   },
 
   // --- Checkout ----------------------------------------------------------
-  // Lemon Squeezy checkout URL for the license product. Their hosted checkout
-  // link works as a plain href; no script tag needed on the page.
+  // Enlace de compra de Polar. Funciona como href a secas, sin script en la página.
   //
-  // **Null until Lemon Squeezy verifies the store.** Same reasoning as the trial
-  // download above: an offer to buy that leads nowhere costs more than no offer.
-  checkoutUrl: null,
+  // **Es de Polar y no de Lemon Squeezy**: la verificación de identidad de estos
+  // últimos lleva semanas sin llegar, y sin ella no se puede cobrar. Ver
+  // `StoreConfig.gateway` en la app, que es donde se dice por cuál de las dos se
+  // cobra.
+  checkoutUrl: 'https://buy.polar.sh/polar_cl_wUySEEf6UwWRLb5Hx5xUqp0YVhgYaeWIhT7AC0K9sBT',
 
   // What a button says when what it leads to is not ready. Shown instead of its
   // label, not beside it: a button reading "Buy a license" that cannot sell one is
