@@ -10,6 +10,12 @@
  * todavía no entiende. Sin sonido, porque no hay nada que oír y porque un vídeo que
  * suena solo se cierra antes de verse.
  *
+ * **Termina con el último fotograma congelado segundo y medio.** En bucle y sin esa
+ * pausa, el salto al principio se lee como parte del movimiento y no se distingue
+ * dónde acaba: quien mira no sabe si ha visto la secuencia entera o ha entrado a la
+ * mitad. Congelar cuesta cero en VP9 —un cuadro quieto no ocupa— y da el respiro que
+ * marca el final.
+ *
  * `playsInline` no es para iPhone —esto es una app de Mac— sino porque sin él Safari
  * en móvil se lo lleva a pantalla completa: quien abre la web desde el teléfono para
  * mirarla y comprar luego en el Mac se encontraría el reproductor tapándolo todo.
