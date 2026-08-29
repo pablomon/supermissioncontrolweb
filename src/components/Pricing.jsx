@@ -12,7 +12,7 @@ const INCLUDED = [
 
 export default function Pricing() {
   return (
-    <Section id="pricing" className="py-24 sm:py-32">
+    <Section id="pricing" className="py-14 sm:py-32">
       <div className="mx-auto max-w-2xl text-center">
         <Eyebrow>Pricing</Eyebrow>
         <Heading>A one-time purchase.</Heading>

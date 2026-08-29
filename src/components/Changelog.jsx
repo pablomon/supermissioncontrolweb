@@ -62,7 +62,7 @@ const RELEASES = [
 
 export default function Changelog() {
   return (
-    <Section id="changelog" className="py-24 sm:py-32">
+    <Section id="changelog" className="py-14 sm:py-32">
       <div className="max-w-2xl">
         <Eyebrow>Release notes</Eyebrow>
         <Heading>What has changed.</Heading>

@@ -21,7 +21,7 @@ const STEPS = [
 
 export default function Install() {
   return (
-    <Section id="install" className="py-24 sm:py-32">
+    <Section id="install" className="py-14 sm:py-32">
       <div className="max-w-2xl">
         <Eyebrow>Setup</Eyebrow>
         <Heading>Installing it takes 2 seconds.</Heading>
@@ -30,21 +30,27 @@ export default function Install() {
         </p>
       </div>
 
-      <ol className="mt-14 grid gap-4 md:grid-cols-3">
+      <ol className="mt-8 grid gap-4 sm:mt-14 md:grid-cols-3">
         {STEPS.map((s) => (
-          <li key={s.n} className="rounded-2xl bg-ink-900 p-7 ring-1 ring-white/8">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent/15 text-sm font-semibold text-accent-soft ring-1 ring-accent/30">
-              {s.n}
-            </span>
-            <h3 className="mt-5 text-lg font-semibold text-white">{s.title}</h3>
-            <p className="mt-2.5 leading-relaxed text-pretty text-ink-300">{s.body}</p>
+          <li key={s.n} className="rounded-2xl bg-ink-900 p-5 ring-1 ring-white/8 sm:p-7">
+            {/* En móvil el número y el título comparten renglón. Apilados, cada paso
+                gastaba dos alturas antes de decir nada, y tres pasos así convertían
+                una sección de trámite en dos pantallas. En md+ vuelven a apilarse,
+                que ahí son tres columnas estrechas y el título necesita el ancho. */}
+            <div className="flex items-center gap-3.5 md:block">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent/15 text-sm font-semibold text-accent-soft ring-1 ring-accent/30">
+                {s.n}
+              </span>
+              <h3 className="text-lg font-semibold text-white md:mt-5">{s.title}</h3>
+            </div>
+            <p className="mt-3 leading-relaxed text-pretty text-ink-300">{s.body}</p>
           </li>
         ))}
       </ol>
 
       <div
         id="compatibility"
-        className="mt-4 grid gap-4 rounded-2xl bg-ink-900 p-7 ring-1 ring-white/8 sm:grid-cols-3"
+        className="mt-4 grid gap-5 rounded-2xl bg-ink-900 p-5 ring-1 ring-white/8 sm:grid-cols-3 sm:gap-4 sm:p-7"
       >
         <Fact
           label="macOS"

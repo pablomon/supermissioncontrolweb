@@ -45,7 +45,7 @@ const QUESTIONS = [
 
 export default function FAQ() {
   return (
-    <Section id="faq" className="py-24 sm:py-32">
+    <Section id="faq" className="py-14 sm:py-32">
       <div className="grid gap-14 lg:grid-cols-[minmax(0,20rem)_1fr] lg:gap-20">
         <div>
           <Eyebrow>Questions</Eyebrow>

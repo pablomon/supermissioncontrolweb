@@ -25,7 +25,7 @@ const POINTS = [
 
 export default function Privacy() {
   return (
-    <Section id="privacy" className="py-24 sm:py-32">
+    <Section id="privacy" className="py-14 sm:py-32">
       <div className="max-w-2xl">
         <Eyebrow>Privacy</Eyebrow>
         <Heading>It asks for a lot of trust. Here is what it does with it.</Heading>

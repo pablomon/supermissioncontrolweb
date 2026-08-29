@@ -7,7 +7,7 @@ import hungPoster from '../assets/hung-poster.jpg'
 
 export default function ForceQuit() {
   return (
-    <Section id="force-quit" className="py-24 sm:py-32">
+    <Section id="force-quit" className="py-14 sm:py-32">
       <div className="max-w-2xl">
         <Eyebrow>Stuck windows</Eyebrow>
         <Heading>Force quit apps straight from Mission Control.</Heading>
