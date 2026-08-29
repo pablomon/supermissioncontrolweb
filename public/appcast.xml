@@ -3,25 +3,26 @@
     <channel>
         <title>SuperMissionControl</title>
         <item>
-            <title>1.2</title>
-            <pubDate>Sun, 23 Aug 2026 03:04:36 +0200</pubDate>
+            <title>1.3</title>
+            <pubDate>Sat, 29 Aug 2026 07:49:44 +0200</pubDate>
             <sparkle:fullReleaseNotesLink>https://www.supermissioncontrol.com/release-notes/</sparkle:fullReleaseNotesLink>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[<h3>Instructions from the menu bar</h3>
+            <description><![CDATA[<h3>Force quit is easier to find</h3>
 <ul>
-  <li>New How It Works entry lists the shortcuts and force quit.</li>
-  <li>Trial notice closes when a licence is activated.</li>
-  <li>Stale Accessibility permission is detected and recovered.</li>
+  <li>Unresponsive windows now show a dimmed ⌥ instead of nothing.</li>
+  <li>The badge no longer replays its entrance animation when ⌥ changes it.</li>
+  <li>Licence management moved to a single button.</li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.2.dmg" length="2859962" type="application/octet-stream" sparkle:edSignature="zoGhx3mhQ8Uu8RYO3LAgWqUzJq0lU6PPiQjWfjZW+S1ACSehbsGgwWYfUC/SFc1x230ll7h4vX/3jGR/p3aGDg=="/>
+            <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl-1.3.dmg" length="2866677" type="application/octet-stream" sparkle:edSignature="zjIjGctdp0cwKlIigfyCYxvdiNEytaAaydhgvsik559PpizPMhltiSG+hye90Pw3FshNqXjs4sA+kP5tSkzYBA=="/>
             <sparkle:deltas>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl8-7.delta" sparkle:deltaFrom="7" length="88582" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="8zDML/DmKKdx1Mb+4mYNJarLm6aAHc/qghtqK1OOASKHZ7hCIajhsL9HSwO6qPgIb9yWXi01hOMMRi+4GyIRDw=="/>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl8-6.delta" sparkle:deltaFrom="6" length="104794" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="V4wpU7tH1FdsKsUdxA0/W/ETK1FLtkJEkseRqkyUjaakBiLWgw+jzEjrkQWocfcHncFbEN5xt2v3XEIms9SbAA=="/>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl8-5.delta" sparkle:deltaFrom="5" length="106806" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="TPYZmTPqku/8qFeedo2o++NfZkZ1H4J/+imtgGsgAioVmIGIGyZexiBz/1MGAM8OyVrDvQU2BDZG5vifBLyfAg=="/>
-                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl8-4.delta" sparkle:deltaFrom="4" length="114306" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="hS8rCQA8sAPZ97gHv8Q3Fc/XaJUhfVx33CmLrrgBpqK69M/gl9jOULPKWTVnH5Ydhwhhl7XNSmcUjHr0TPinCw=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl9-8.delta" sparkle:deltaFrom="8" length="132330" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="lBSDjsgV5kBELxHDmOhf3XZQ9lffatAeEuAgvlFJb8Yk7/p8hOA4JwsOCzfEVR8DWSR+SK2AaUJHatkY8lRbAQ=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl9-7.delta" sparkle:deltaFrom="7" length="141582" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="kIyaqceCMat5w+7ToMs6RZy23YKwSVKPSiVoriBLu1B7ijev8FnSH0mh7FJSnDtlbLo/cB/yU4j1brzm5jdvCg=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl9-6.delta" sparkle:deltaFrom="6" length="151782" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="P0H5bP8V3S31LR+M1dhaUfam1nyfynIZk5OqnyT/S937ZHohD+oqXz6II9lZmrUt5UnWVPyOT5SXdmRxuDDsDA=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl9-5.delta" sparkle:deltaFrom="5" length="151782" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="I4wGb4ril0w7YRA+TByTStHFctJudm5iDJU7kL7Wde9CFIKnZjg2xoO8GLIJoHsISnbgFf6XHlwHpPhMalY/BQ=="/>
+                <enclosure url="https://www.supermissioncontrol.com/releases/SuperMissionControl9-4.delta" sparkle:deltaFrom="4" length="158166" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="37oFUs14WanVXr8Iyzb/vEpmm7akQiEUIz/7HExhvfEaxbmx3KalH3anhojk4e7rzqFDMZ9H8SqSkueVVkBgBw=="/>
             </sparkle:deltas>
         </item>
     </channel>

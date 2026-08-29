@@ -6,6 +6,17 @@ import { Eyebrow, Heading, Kbd, Section } from './ui'
 // instalada.
 const RELEASES = [
   {
+    version: '1.3',
+    title: 'Force quit is easier to find',
+    body: (
+      <>
+        Unresponsive windows now show a dimmed ⌥ instead of nothing. The badge no longer
+        replays its entrance animation when ⌥ changes it. Licence management moved to a
+        single button.
+      </>
+    ),
+  },
+  {
     version: '1.2',
     title: 'Instructions from the menu bar',
     body: (

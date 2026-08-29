@@ -40,8 +40,11 @@ export const config = {
     // fourteen days, finds a dead checkout, and **cannot try again** on the day
     // there is something to buy.
     //
-    // Put '/SuperMissionControl.dmg' back the day the store works.
-    downloadUrl: null,
+    // **Encendida el 2026-08-29**, y no antes: hasta ese día no se había visto
+    // completarse un pedido de verdad, y quien empezara la prueba se habría quedado
+    // con la quincena quemada y sin poder pagar. El circuito entero —comprar,
+    // activar, validar y liberar— quedó recorrido contra Polar esa madrugada.
+    downloadUrl: '/SuperMissionControl.dmg',
     sizeMB: 2.7,
   },
 
