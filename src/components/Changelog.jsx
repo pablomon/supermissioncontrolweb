@@ -6,6 +6,17 @@ import { Eyebrow, Heading, Kbd, Section } from './ui'
 // instalada.
 const RELEASES = [
   {
+    version: '1.4',
+    title: 'Works on macOS 27',
+    body: (
+      <>
+        macOS 27 moved Mission Control out of the Dock, and the badge stopped appearing
+        over the thumbnails. It is back. The badge also steps aside while you drag a
+        window to another desktop.
+      </>
+    ),
+  },
+  {
     version: '1.3',
     title: 'Force quit is easier to find',
     body: (
